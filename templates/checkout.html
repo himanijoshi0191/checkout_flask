@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('checkout') }}">Home </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="jumbotron">
+        <h1 class="display-3">product_test</h1>
+        <p class="lead">100$</p>
+        <a href="" id="buy_now_btn" class="btn btn-primary">Buy Now</a>
+      </div>
+
+      <footer class="footer">
+      </footer>
+      <script src="https://js.stripe.com/v3/"></script>
+      <script src="{{ url_for('static', filename='script-ajax.js') }}"></script>
+
+    </div> 
+  </body>
+</html>
